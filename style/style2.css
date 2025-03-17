@@ -10,6 +10,11 @@
     background-color: #0e0e0e;
 }
 
+a,
+button {
+    color: #000;
+}
+
 h1,
 h2,
 h3,
@@ -18,9 +23,6 @@ h5,
 h6 {
     margin: 0;
 }
-
-
-
 
 .container {
     width: 100%;
@@ -260,11 +262,16 @@ h6 {
 }
 
 .slider {
-    width: 1740px;
+    width: 100%;
     position: relative;
     overflow: hidden;
     margin: auto;
     padding: 0;
+}
+
+.slider_line {
+    display: flex;
+    gap: 10px;
 }
 
 .active_img {
@@ -273,8 +280,18 @@ h6 {
 
 }
 
+.active_img:first-child {
+    padding-left: 60px;
+
+}
+
+.active_img:last-child {
+    padding-right: 60px;
+
+}
+
 .img {
-    margin-right: 5px;
+
     display: block;
     opacity: 0.4;
     width: 240px;

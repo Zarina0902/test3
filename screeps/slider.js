@@ -1,8 +1,8 @@
-
-let slider = document.querySelectorAll('.img');
-let line = document.querySelector('.slider_line');
-let sliderWidth = document.querySelector('.slider').offsetWidth;
-let widthArray = [0];
+const sliderContainer = document.querySelector('#slider');
+const slider = sliderContainer.querySelectorAll('img');
+const line = sliderContainer.querySelector('#slider_line');
+const sliderWidth = sliderContainer.offsetWidth;
+const widthArray = [0];
 let lineWith = 0;
 let offset = 0;
 let step = 0;
@@ -24,7 +24,7 @@ line.style.transition = 'all ease 2s';
 
 console.log(widthArray);
 
-document.onclick = function () {
+sliderContainer.onclick = function () {
     ostatok = lineWith - sliderWidth - offset;
     if (ostatok >= 0) {
         offset = offset + widthArray[step];
