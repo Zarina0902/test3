@@ -78,8 +78,11 @@
                         <p class="text_case_2">Ежегодная премия</p>
                     </div>
                     <div class="case_img">
-                        <source class="img_columns" src="Media/case2.webp" type="image/wbep">
-                        <img src="Media/case2.png" alt="pezza">
+                        <picture>
+                            <source srcset="Media/case2.avif" type="image/avif">
+                            <source srcset="Media/case2.webp" type="image/webp">
+                            <img class="img_columns" src="Media/case2.png" alt="pezza" height="250" width="350" loading="lazy">
+                        </picture>
                         <p class="text_case_1">Фестиваль «Профсоюзная»</p>
                         <p class="text_case_2">Уличный фестиваль</p>
                     </div>
